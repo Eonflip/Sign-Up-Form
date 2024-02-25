@@ -7,44 +7,62 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="image-container">
-        <img src="./water.jpg" alt="2 boats on the water" height="400px" width="200px">
+    <div class="side-hero">
         <div class="logo-container">
-            <img src="./EonLoop-Logo.png" alt="infinity logo">
+            <a href="https://github.com/eonflip"> <img src="./EonLoop.png" alt="infinity logo"> </a> 
+            <h1 class="logo-title">Eonloop</h1>
+            
         </div>
-        <div class="caption-container">
-            <caption>Photo by <a href="https://unsplash.com/@ibbeyz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ibrahim Mohamed</a> on <a href="https://unsplash.com/photos/aerial-view-of-body-of-water-BI8sMNiJx_I?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-            </caption>
+        <div class="artist-credit">
+            <p>Photo by <a href="https://unsplash.com/@kristapsungurs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Kristaps Ungurs</a> on <a href="https://unsplash.com/photos/lake-surrounded-by-green-trees-and-snow-covered-mountains-during-daytime-PKBwlqFrbus?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </a>
+            </p>
         </div>
+        
     </div>
-    <div class="content-container">
-        <h3>This is not real online service! This is a practice project. 
-            However please feel free to try the form out =D
-        </h3>
-        <form>
+    <div class="user-content">
+        <div class="text-intro">
+            <h3>This is not real online service! This is a practice project. 
+                However please feel free to try the form out.
+            </h3>
+            <br><br>
+            <p>You know you want to!</p>
+        </div>
+        <form class="form-content">
             <section id="form-info">
                 <h3>Sign Up</h3>
-                <label for="first_name">First Name*</label>
-                <input type="text" name="first_name" id="first_name" required>
+                    <label for="first_name">First Name*
+                        <input type="text" name="first_name" id="first_name" required>
+                    </label>
 
-                <label for="last_name">Last Name*</label>
-                <input type="text" name="last_name" id="last_name" required>
+                    <label for="last_name">
+                        <span>Last Name</span>
+                        <strong><span aria-label="required">*</span></strong>
+                        <input type="text" name="last_name" id="last_name" required>
+                    </label>
 
-                <label for="email">Email*</label>
-                <input type="email" name="email" id="email" required>
+                    <label for="email">Email*
+                        <input type="email" name="email" id="email" required>
+                    </label>
 
-                <label for="phone">Phone Number*</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                    <label for="phone">Phone Number*
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                    </label>
 
-                <label for="password">Password*</label>
-                <input type="password" id="password" name="password" required>
+                    <label for="password">Password*
+                        <input type="password" id="password" name="password" required>
+                    </label>
 
-                <label for="password_confirm">Confirm Password*</label>
-                <input type="password" id="password_confirm" name="password_confirm" required>
+                    <label for="password_confirm">Confirm Password*
+                        <input type="password" id="password_confirm" name="password_confirm" required>
+                    </label>
             </section>
-            <button>Create Account</button>
-            <p>Already have an account? <a href="#">Log In</a></p>
         </form>
+        <section class="submit">
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="#">Log In</a></p>
+        </section>
     </div>
+        
 </body>
 </html>
