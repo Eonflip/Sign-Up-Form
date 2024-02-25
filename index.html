@@ -29,34 +29,34 @@
             <p>You know you want to!</p>
         </div>
         <form class="form-content">
-            <section id="form-info">
-                <h3>Sign Up</h3>
-                    <label for="first_name">First Name*
-                        <input type="text" name="first_name" id="first_name" required>
-                    </label>
+                <h3 class="sign-up">Sign Up</h3>
+                    <div class="input-container">
+                        <label for="first_name">First Name*
+                            <input type="text" name="first_name" id="first_name" required>
+                        </label>
 
-                    <label for="last_name">
-                        <span>Last Name</span>
-                        <strong><span aria-label="required">*</span></strong>
-                        <input type="text" name="last_name" id="last_name" required>
-                    </label>
+                        <label for="last_name">
+                            <span>Last Name*</span>
+                            <strong><span aria-label="required"></span></strong>
+                            <input type="text" name="last_name" id="last_name" required>
+                        </label>
 
-                    <label for="email">Email*
-                        <input type="email" name="email" id="email" required>
-                    </label>
+                        <label for="email">Email*
+                            <input type="email" name="email" id="email" required>
+                        </label>
 
-                    <label for="phone">Phone Number*
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
-                    </label>
+                        <label for="phone">Phone Number*
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                        </label>
 
-                    <label for="password">Password*
-                        <input type="password" id="password" name="password" required>
-                    </label>
+                        <label for="password">Password*
+                            <input type="password" id="password" name="password" required>
+                        </label>
 
-                    <label for="password_confirm">Confirm Password*
-                        <input type="password" id="password_confirm" name="password_confirm" required>
-                    </label>
-            </section>
+                        <label for="password_confirm">Confirm Password*
+                            <input type="password" id="password_confirm" name="password_confirm" required>
+                        </label>
+                    </div>
         </form>
         <section class="submit">
             <button type="submit">Create Account</button>

@@ -80,44 +80,68 @@ body {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    background-color: rgb(13, 13, 71);
+    background-color: rgb(0, 0, 0);
 }
 
 .text-intro {
     font-weight: 400;
     font-size: 25px;
     margin: 20px;
+    padding: 20px;
     color: white;
 }
 
 .form-content {
-    gap: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border: 2px red solid;
+    gap: 0px;
+    padding: 20px;
     margin: 20px;
     color: white;
     height: 35vh;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: wrap;
 }
 
-.input {
+.input-container {
     display: flex;
-    flex-flow: column wrap;
-    width: 50%;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    opacity: 50%;
-    border: 2px red solid;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+}
+
+input {
+    width: 100%;
+    margin-top: 5px;
 }
 
 .submit {
     color: white;
     margin: 20px;
+    padding: 20px;
+    
+}
+
+.sign-up {
+    margin-top: 50px;
+    margin-bottom: 0;
+    font-size: 24px;
 }
 
 
 button {
     margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: lightblue;
+}
+
+button:active {
+
+}
+
+
+label {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 20px);
+    align-items: flex-start;
 }
