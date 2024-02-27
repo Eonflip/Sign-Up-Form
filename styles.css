@@ -21,11 +21,20 @@ html, body {
 
 body {
     display: flex;
+    font-family: "Lato";
 }
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato/Lato-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal; 
+}
+
 
 .side-hero {
     position: relative;
-    background-image: url(./mountain.jpeg);
+    background-image: url(./images/mountain.jpeg);
     width: 40vw;
     background-position: center;
     background-size: cover;
@@ -37,18 +46,18 @@ body {
 
 .logo-container {
     position: relative;
-    top: -25vh;
+    top: -20vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 25vh;
+    height: 20vh;
     background-color: rgba(0, 0, 0, 0.433);
 }
 
 .logo-title {
     position: absolute;
-    top: 20vh;
+    top: 15vh;
     padding: 0;
     margin-left: 5px;
     margin-right: 0;
@@ -86,7 +95,7 @@ body {
 .text-intro {
     font-weight: 400;
     font-size: 25px;
-    margin: 20px;
+    margin: 20px 20px 0px 20px;
     padding: 20px;
     color: white;
 }
@@ -109,8 +118,12 @@ body {
 }
 
 input {
-    width: 100%;
+    width: 85%;
     margin-top: 5px;
+    background-color: black;
+    border: 1px solid grey;
+    color: white;
+    padding-left: 5px;
 }
 
 .submit {
@@ -121,8 +134,8 @@ input {
 }
 
 .sign-up {
-    margin-top: 50px;
-    margin-bottom: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-size: 24px;
 }
 
@@ -130,12 +143,22 @@ input {
 button {
     margin-bottom: 20px;
     border-radius: 5px;
-    padding: 10px;
-    background-color: lightblue;
+    padding: 15px;
+    width: 25%;
+    background-color: black;
+    border: 1px solid lightskyblue;
+    color: lightskyblue;
 }
 
-button:active {
+button:hover {
+    background-color: lightskyblue;
+    border: 1px solid lightskyblue;
+    color: black;
+}
 
+input:focus {
+    outline: none;
+    border: 2px solid lightskyblue;
 }
 
 
@@ -144,4 +167,8 @@ label {
     flex-direction: column;
     width: calc(50% - 20px);
     align-items: flex-start;
+}
+
+img {
+    height: 350px;
 }
